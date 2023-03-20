@@ -1,3 +1,12 @@
+This fork removes the ability to tap on the URL bar—rendering the browser useful for opening links, but useless for "browsing". 
+
+It also gets rid of a bunch of purple because i don't like it and turns off some features i found annoying
+
+Original readme below.
+
+----------------
+
+
 # Firefox Focus for iOS
 
 _Browse like no one’s watching. The new Firefox Focus automatically blocks a wide range of online trackers — from the moment you launch it to the second you leave it. Easily erase your history, passwords and cookies, so you won’t get followed by things like unwanted ads._
