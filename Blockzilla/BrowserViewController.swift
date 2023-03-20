@@ -77,7 +77,7 @@ class BrowserViewController: UIViewController {
 
     private var homeViewContainer = UIView()
 
-    fileprivate var showsToolsetInURLBar = false {
+    fileprivate var showsToolsetInURLBar = true {
         didSet {
             if showsToolsetInURLBar {
                 browserBottomConstraint.deactivate()
@@ -134,7 +134,6 @@ class BrowserViewController: UIViewController {
     }
 
     fileprivate func addShortcutsBackgroundConstraints() {
-        shortcutsBackground.backgroundColor = isIPadRegularDimensions ? .systemBackground.withAlphaComponent(0.85) : .foundation
         shortcutsBackground.layer.cornerRadius = isIPadRegularDimensions ? 10 : 0
 
         if isIPadRegularDimensions {
@@ -249,7 +248,7 @@ class BrowserViewController: UIViewController {
         alertStackView.alignment = .center
 
         // true if device is an iPad or is an iPhone in landscape mode
-        showsToolsetInURLBar = (UIDevice.current.userInterfaceIdiom == .pad && (UIScreen.main.bounds.width == view.frame.size.width || view.frame.size.width > view.frame.size.height)) || (UIDevice.current.userInterfaceIdiom == .phone && view.frame.size.width > view.frame.size.height)
+        showsToolsetInURLBar = true // (UIDevice.current.userInterfaceIdiom == .pad && (UIScreen.main.bounds.width == view.frame.size.width || view.frame.size.width > view.frame.size.height)) || (UIDevice.current.userInterfaceIdiom == .phone && view.frame.size.width > view.frame.size.height)
 
         containWebView()
         createHomeView()
@@ -553,9 +552,9 @@ class BrowserViewController: UIViewController {
     func setupBackgroundImage() {
         switch UIDevice.current.userInterfaceIdiom {
         case .phone:
-            background.image = UIApplication.shared.orientation?.isLandscape == true ? #imageLiteral(resourceName: "background_iphone_landscape") : #imageLiteral(resourceName: "background_iphone_portrait")
+            background.image = #imageLiteral(resourceName: "background_iphone_portrait")
         case .pad:
-            background.image = UIApplication.shared.orientation?.isLandscape == true ? #imageLiteral(resourceName: "background_ipad_landscape") : #imageLiteral(resourceName: "background_ipad_portrait")
+            background.image = #imageLiteral(resourceName: "background_iphone_portrait")
         default:
             background.image = #imageLiteral(resourceName: "background_iphone_portrait")
 
@@ -847,7 +846,7 @@ class BrowserViewController: UIViewController {
     }
 
     func requestReviewIfNecessary() {
-        if AppInfo.isTesting() { return }
+        return
         let currentLaunchCount = UserDefaults.standard.integer(forKey: UIConstants.strings.userDefaultsLaunchCountKey)
         let threshold = UserDefaults.standard.integer(forKey: UIConstants.strings.userDefaultsLaunchThresholdKey)
 
@@ -977,7 +976,7 @@ class BrowserViewController: UIViewController {
         orientationWillChange = true
         // UIDevice.current.orientation isn't reliable. See https://bugzilla.mozilla.org/show_bug.cgi?id=1315370#c5
         // As a workaround, consider the phone to be in landscape if the new width is greater than the height.
-        showsToolsetInURLBar = (UIDevice.current.userInterfaceIdiom == .pad && (UIScreen.main.bounds.width == size.width || size.width > size.height)) || (UIDevice.current.userInterfaceIdiom == .phone && size.width > size.height)
+        showsToolsetInURLBar = true //(UIDevice.current.userInterfaceIdiom == .pad && (UIScreen.main.bounds.width == size.width || size.width > size.height)) || (UIDevice.current.userInterfaceIdiom == .phone && size.width > size.height)
 
         // isIPadRegularDimensions check if the device is a Ipad and the app is not in split mode
         isIPadRegularDimensions = ((UIDevice.current.userInterfaceIdiom == .pad && (UIScreen.main.bounds.width == size.width || size.width > size.height))) || (UIDevice.current.userInterfaceIdiom == .pad &&  UIApplication.shared.orientation?.isPortrait == true && UIScreen.main.bounds.width == size.width)
@@ -1053,7 +1052,7 @@ class BrowserViewController: UIViewController {
     }
 
     private func toggleURLBarBackground(isBright: Bool) {
-        urlBarContainer.backgroundColor = urlBar.inBrowsingMode ? .foundation : .clear
+        urlBarContainer.backgroundColor =  .clear
     }
 
     override var keyCommands: [UIKeyCommand]? {
@@ -1117,13 +1116,6 @@ class BrowserViewController: UIViewController {
         if let url = urlBar.url {
             let utils = OpenUtils(url: url, webViewController: webViewController)
 
-            getShortcutsItem(for: url)
-                .map(UIAction.init)
-                .map { UIMenu(options: .displayInline, children: [$0]) }
-                .map {
-                    actions.append($0)
-                }
-
             var actionItems: [UIMenuElement] = [UIAction(findInPageItem)]
             actionItems.append(
                 webViewController.requestMobileSite
@@ -1136,16 +1128,12 @@ class BrowserViewController: UIViewController {
 
             var shareItems: [UIMenuElement?] = [UIAction(copyItem(url: url))]
             shareItems.append(UIAction(sharePageItem(for: utils, sender: sender)))
-            shareItems.append(openInFireFoxItem(for: url).map(UIAction.init))
-            shareItems.append(openInChromeItem(for: url).map(UIAction.init))
-            shareItems.append(UIAction(openInDefaultBrowserItem(for: url)))
 
             let shareMenu = UIMenu(options: .displayInline, children: shareItems.compactMap { $0 })
             actions.append(shareMenu)
-            actions.append(UIMenu(options: .displayInline, children: [UIAction(whatsNewItem), UIAction(settingsItem)]))
 
         } else {
-            let actionMenu = UIMenu(options: .displayInline, children: [UIAction(whatsNewItem), UIAction(helpItem), UIAction(settingsItem)])
+            let actionMenu = UIMenu(options: .displayInline, children: [UIAction(settingsItem)])
             actions.append(actionMenu)
         }
         return actions
@@ -1157,8 +1145,6 @@ class BrowserViewController: UIViewController {
         if let url = urlBar.url {
             let utils = OpenUtils(url: url, webViewController: webViewController)
 
-            actions.append([getShortcutsItem(for: url).map(PhotonActionSheetItem.init)].compactMap { $0 })
-
             var actionItems = [PhotonActionSheetItem(findInPageItem)]
             actionItems.append(
                 webViewController.requestMobileSite
@@ -1168,8 +1154,6 @@ class BrowserViewController: UIViewController {
 
             var shareItems: [PhotonActionSheetItem?] = [PhotonActionSheetItem(copyItem(url: url))]
             shareItems.append(PhotonActionSheetItem(sharePageItem(for: utils, sender: sender)))
-            shareItems.append(openInFireFoxItem(for: url).map(PhotonActionSheetItem.init))
-            shareItems.append(openInChromeItem(for: url).map(PhotonActionSheetItem.init))
             shareItems.append(PhotonActionSheetItem(openInDefaultBrowserItem(for: url)))
 
             actions.append(actionItems)
@@ -1317,13 +1301,7 @@ extension BrowserViewController: URLBarDelegate {
 
         switch scrollBarState {
         case .expanded:
-            let y = tap.location(in: urlBar).y
-
-            // If the tap is greater than this threshold, the user wants to type in the URL bar
-            if y >= 10 {
-                urlBar.activateTextField()
-                return
-            }
+            
 
             // Just scroll the vertical position so the page doesn't appear under
             // the notch on the iPhone X

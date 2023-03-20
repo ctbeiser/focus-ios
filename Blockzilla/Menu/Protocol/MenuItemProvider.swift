@@ -8,19 +8,12 @@ import AppShortcuts
 protocol MenuItemProvider {
     var shortcutManager: ShortcutsManager { get }
 
-    func openInFireFoxItem(for url: URL) -> MenuAction?
-    func openInChromeItem(for url: URL) -> MenuAction?
-
     var findInPageItem: MenuAction { get }
     var requestDesktopItem: MenuAction { get }
     var requestMobileItem: MenuAction { get }
     var settingsItem: MenuAction { get }
     var helpItem: MenuAction { get }
     var whatsNewItem: MenuAction { get }
-
-    func getShortcutsItem(for url: URL) -> MenuAction?
-    func addToShortcutsItem(for url: URL) -> MenuAction
-    func removeFromShortcutsItem(for url: URL) -> MenuAction
 
     func openInDefaultBrowserItem(for url: URL) -> MenuAction
     func copyItem(url: URL) -> MenuAction
@@ -78,28 +71,6 @@ extension MenuItemProvider where Self: MenuActionable {
     var whatsNewItem: MenuAction {
         MenuAction(title: UIConstants.strings.whatsNewTitle, image: "highlight") { [unowned self] in
             self.showWhatsNew()
-        }
-    }
-
-    func getShortcutsItem(for url: URL) -> MenuAction? {
-        if shortcutManager.isSaved(url: url) {
-            return removeFromShortcutsItem(for: url)
-        } else if shortcutManager.hasSpace {
-            return addToShortcutsItem(for: url)
-        } else {
-            return nil
-        }
-    }
-
-    func addToShortcutsItem(for url: URL) -> MenuAction {
-        MenuAction(title: UIConstants.strings.shareMenuAddToShortcuts, image: "icon_shortcuts_add") { [unowned self] in
-            self.addToShortcuts(url: url)
-        }
-    }
-
-    func removeFromShortcutsItem(for url: URL) -> MenuAction {
-        MenuAction(title: UIConstants.strings.shareMenuRemoveFromShortcuts, image: "icon_shortcuts_remove") { [unowned self] in
-            self.removeShortcut(url: url)
         }
     }
 

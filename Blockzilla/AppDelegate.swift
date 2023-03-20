@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             case .willResignActive:
                 guard privacyProtectionWindow == nil else { return }
-                showPrivacyProtectionWindow()
+//                showPrivacyProtectionWindow()
 
             case .didEnterBackground:
                 authenticationManager.logout()
