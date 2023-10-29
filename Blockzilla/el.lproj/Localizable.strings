@@ -173,7 +173,7 @@
 "FirstRun.lastSlide.buttonLabel" = "OK, κατάλαβα!";
 
 /* Message label on the first run screen */
-"FirstRun.messageLabelTagline" = "Περιηγηθείτε σαν να μην σας βλέπει κανείς.";
+"FirstRun.messageLabelTagline" = "Περιηγηθείτε σαν να μη σας βλέπει κανείς.";
 
 /* Button label used to close a menu that displays as a popup. */
 "Menu.Close" = "Κλείσιμο";
@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Χρήση λειτουργίας συστήματος";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "Τι νέο υπάρχει";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "ΣΥΝΤΟΜΕΥΣΕΙΣ SIRI";
 
@@ -503,7 +500,7 @@
 "Siri.erase" = "Διαγραφή";
 
 /* Title of option in settings to set up Siri to erase and then open the app. */
-"Siri.eraseAndOpen" = "Διαγραφή & άνοιγμα";
+"Siri.eraseAndOpen" = "Διαγραφή και άνοιγμα";
 
 /* Title for screen to add a favorite URL to Siri. */
 "Siri.favoriteUrl" = "Άνοιγμα αγαπημένου ιστοτόπου";
@@ -522,12 +519,6 @@
 
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Ενεργοποίηση Touch ID";
-
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Διαβάστε περισσότερα σχετικά με αυτό και άλλες ενημερώσεις στο %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Πράγματι, δημιουργήσαμε μια νέα εμφάνιση!";
 
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "Ενέργειες σελίδας > Έκδοση για υπολογιστές";
@@ -620,7 +611,7 @@
 "URL.addToAutocompleteLabel" = "Προσθήκη συνδέσμου για αυτόματη συμπλήρωση";
 
 /* Text for the URL context menu when a user long presses on the URL bar with clipboard contents. */
-"URL.contextMenu" = "Επικόλληση & μετάβαση";
+"URL.contextMenu" = "Επικόλληση και μετάβαση";
 
 /* Erase button in the URL bar */
 "URL.eraseButtonLabel" = "ΔΙΑΓΡΑΦΗ";
