@@ -98,7 +98,7 @@
 "Autocomplete.mySites" = "Meus sites";
 
 /* Description for adding and managing custom autocomplete URLs. The placeholder is replaced with the application name, which can be either Firefox Focus or Firefox Klar. */
-"Autocomplete.mySitesDesc" = "Ativar para ter o %@ a concluir automaticamente os seus URLs favoritos.";
+"Autocomplete.mySitesDesc" = "Ativar para ter o %@ a concluir automaticamente os seus URL favoritos.";
 
 /* Label for enabling or disabling top sites */
 "Autocomplete.topSites" = "Sites mais visitados";
@@ -134,7 +134,7 @@
 "browserShortcutDescription.selectLocationBar" = "Selecionar barra de localização";
 
 /* Label on button to complete edits */
-"Done" = "Feito";
+"Done" = "Concluído";
 
 /* Label on button to allow edits */
 "Edit" = "Editar";
@@ -161,7 +161,7 @@
 "ExternalLink.emailButton" = "Email";
 
 /* Accessibility label for done button in Find in Page Toolbar. */
-"FindInPage.Done" = "Localizar na página feito";
+"FindInPage.Done" = "Localizar na página concluído";
 
 /* Accessibility label for next result button in Find in Page Toolbar. */
 "FindInPage.NextResult" = "Localizar seguinte na página";
@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Utilizar modo claro/escuro do sistema";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "Novidades";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "ATALHOS DE SIRI";
 
@@ -522,12 +519,6 @@
 
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Ativar o Touch ID";
-
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Saber mais sobre esta e outras atualizações para o %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Sim, temos um novo visual!";
 
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "Ações da página > Solicitar site de computador";
