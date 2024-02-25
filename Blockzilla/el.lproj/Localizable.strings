@@ -11,7 +11,7 @@
 "About.privateBullet2" = "Φραγή ιχνηλατών (ή αποδοχή, ενημερώνοντας τις ρυθμίσεις)";
 
 /* Label on About screen */
-"About.privateBullet3" = "Διαγραφή των cookies και του ιστορικού αναζητήσεων και περιήγησης";
+"About.privateBullet3" = "Διαγραφή των cookie και του ιστορικού αναζητήσεων και περιήγησης";
 
 /* Label on About screen */
 "About.privateBulletHeader" = "Χρησιμοποιήστε το για:";
@@ -173,7 +173,7 @@
 "FirstRun.lastSlide.buttonLabel" = "OK, κατάλαβα!";
 
 /* Message label on the first run screen */
-"FirstRun.messageLabelTagline" = "Περιηγηθείτε σαν να μην σας βλέπει κανείς.";
+"FirstRun.messageLabelTagline" = "Περιηγηθείτε σαν να μη σας βλέπει κανείς.";
 
 /* Button label used to close a menu that displays as a popup. */
 "Menu.Close" = "Κλείσιμο";
@@ -203,7 +203,7 @@
 "Onboarding.DefaultBrowser.TopButtonTitle.V2" = "Ορισμός ως προεπιλογή";
 
 /* Text for a label that indicates the description of history section from onboarding screen. */
-"Onboarding.History.Description" = "Διαγράψτε το ιστορικό περιήγησης, τους κωδικούς πρόσβασης, τα cookies σας και αποτρέψτε την καταγραφή από ανεπιθύμητες διαφημίσεις με ένα μόνο πάτημα!";
+"Onboarding.History.Description" = "Διαγράψτε το ιστορικό περιήγησης, τους κωδικούς πρόσβασης, τα cookie σας και αποτρέψτε την καταγραφή από ανεπιθύμητες διαφημίσεις με ένα μόνο πάτημα!";
 
 /* Text for a label that indicates the title of history section from onboarding screen. */
 "Onboarding.History.Title" = "Το ιστορικό σας δεν σας ακολουθεί";
@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Χρήση λειτουργίας συστήματος";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "Τι νέο υπάρχει";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "ΣΥΝΤΟΜΕΥΣΕΙΣ SIRI";
 
@@ -503,7 +500,7 @@
 "Siri.erase" = "Διαγραφή";
 
 /* Title of option in settings to set up Siri to erase and then open the app. */
-"Siri.eraseAndOpen" = "Διαγραφή & άνοιγμα";
+"Siri.eraseAndOpen" = "Διαγραφή και άνοιγμα";
 
 /* Title for screen to add a favorite URL to Siri. */
 "Siri.favoriteUrl" = "Άνοιγμα αγαπημένου ιστοτόπου";
@@ -522,12 +519,6 @@
 
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Ενεργοποίηση Touch ID";
-
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Διαβάστε περισσότερα σχετικά με αυτό και άλλες ενημερώσεις στο %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Πράγματι, δημιουργήσαμε μια νέα εμφάνιση!";
 
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "Ενέργειες σελίδας > Έκδοση για υπολογιστές";
@@ -587,7 +578,7 @@
 "TooltipBodyText.TrashIcon" = "Πατήστε τον κάδο απορριμμάτων ανά πάσα στιγμή για να αφαιρέσετε όλα τα ίχνη της τρέχουσας συνεδρίας σας.";
 
 /* This is the body text that is displayed for the Trash icon tooltip */
-"TooltipBodyText.TrashIcon.V2" = "Πατήστε εδώ για να τα διαγράψετε όλα — ιστορικό, cookies, τα πάντα — και ξεκινήστε από την αρχή σε μια νέα καρτέλα.";
+"TooltipBodyText.TrashIcon.V2" = "Πατήστε εδώ για να τα διαγράψετε όλα — ιστορικό, cookie, τα πάντα — και ξεκινήστε από την αρχή σε μια νέα καρτέλα.";
 
 /* This is the title text that is displayed for the Privacy tooltip */
 "TooltipTitleText.Privacy" = "Προστατεύεστε!";
@@ -620,7 +611,7 @@
 "URL.addToAutocompleteLabel" = "Προσθήκη συνδέσμου για αυτόματη συμπλήρωση";
 
 /* Text for the URL context menu when a user long presses on the URL bar with clipboard contents. */
-"URL.contextMenu" = "Επικόλληση & μετάβαση";
+"URL.contextMenu" = "Επικόλληση και μετάβαση";
 
 /* Erase button in the URL bar */
 "URL.eraseButtonLabel" = "ΔΙΑΓΡΑΦΗ";
