@@ -11,7 +11,7 @@
 "About.privateBullet2" = "拦截跟踪器（也可调整为允许跟踪器）";
 
 /* Label on About screen */
-"About.privateBullet3" = "清除 Cookie、搜索记录和浏览记录";
+"About.privateBullet3" = "清除 Cookie、搜索记录和浏览历史";
 
 /* Label on About screen */
 "About.privateBulletHeader" = "用作私密浏览器，可以：";
@@ -191,7 +191,7 @@
 "Onboarding.DefaultBrowser.BottomButtonTitle.V2" = "跳过";
 
 /* Text for a label that indicates the first subtitle for the default browser onboarding screen version 2. */
-"Onboarding.DefaultBrowser.FirstSubtitle.V2" = "隐私保护考量，我们会在您关闭应用程序时，自动清除浏览记录。";
+"Onboarding.DefaultBrowser.FirstSubtitle.V2" = "我们会在您关闭应用时自动清除浏览历史，以增强隐私保护。";
 
 /* Text for a label that indicates the second subtitle for the default browser onboarding screen version 2. %@ is the name of the app (Focus/Klar) */
 "Onboarding.DefaultBrowser.SecondSubtitle.V2" = "将 %@ 设为默认浏览器，保护您的数据安全。";
@@ -245,7 +245,7 @@
 "Safari.openInstruction" = "打开设备设置";
 
 /* Save button label */
-"Save" = "保存";
+"Save" = "存储";
 
 /* Label for error state when entering an invalid search engine URL. %s is a search term in a URL. */
 "SearchEngine.addEngineError" = "网址无效。尝试用这个替换搜索关键词：%s。";
@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "使用系统浅/深色模式";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "新版变化";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "Siri 快捷指令";
 
@@ -470,7 +467,7 @@
 "ShortcutView.RenameShortcutAlertPlaceholder" = "快捷方式名称";
 
 /* Text for the rename shortcut alert primary action. */
-"ShortcutView.RenameShortcutAlertPrimaryAction" = "保存";
+"ShortcutView.RenameShortcutAlertPrimaryAction" = "存储";
 
 /* Text for the rename shortcut alert secondary action. */
 "ShortcutView.RenameShortcutAlertSecondaryAction" = "取消";
@@ -522,12 +519,6 @@
 
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "开启触控 ID";
-
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "了解 %@ 此版本与其他版本更新的更多信息。";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "是的，我们的外观已焕然一新！";
 
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "页面操作 > 要求桌面版网站";
@@ -587,7 +578,7 @@
 "TooltipBodyText.TrashIcon" = "随时轻点垃圾桶，清除当前会话的全部痕迹。";
 
 /* This is the body text that is displayed for the Trash icon tooltip */
-"TooltipBodyText.TrashIcon.V2" = "轻点此处即可删除浏览记录、Cookie 等所有数据，并新建一个全新标签页。";
+"TooltipBodyText.TrashIcon.V2" = "轻点此处即可删除历史记录、Cookie 等所有数据，并新建一个全新标签页。";
 
 /* This is the title text that is displayed for the Privacy tooltip */
 "TooltipTitleText.Privacy" = "保护您是我的首要职责";
