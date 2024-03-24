@@ -158,7 +158,7 @@
 "ExternalLink.cancelButton" = "Zrušiť";
 
 /* Button label in mailto: dialog to send an email. Test page: https://people-mozilla.org/~bnicholson/test/schemes.html */
-"ExternalLink.emailButton" = "Poslať e-mail";
+"ExternalLink.emailButton" = "Poslať e‑mail";
 
 /* Accessibility label for done button in Find in Page Toolbar. */
 "FindInPage.Done" = "Hľadanie na stránke bolo dokončené";
@@ -353,7 +353,7 @@
 "Settings.setAsDefaultBrowser" = "Nastaviť ako predvolený prehliadač";
 
 /* %@ is the name of the app. Description for set as default browser option */
-"Settings.setAsDefaultBrowserDescription" = "Nastavte si automatické otváranie webových stránok, e-mailov a správ vo %@e.";
+"Settings.setAsDefaultBrowserDescription" = "Nastavte si automatické otváranie webových stránok, e‑mailov a správ vo %@e.";
 
 /* System value for theme section in settings menu */
 "Settings.systemTheme" = "Systémová téma";
@@ -411,9 +411,6 @@
 
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Použiť tmavú/svetlú tému vzhľadu podľa systému";
-
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "Čo je nové";
 
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "SKRATKY PRE SIRI";
@@ -522,12 +519,6 @@
 
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Zapnite Touch ID";
-
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Prečítajte si viac o tejto a ďalších novinkách prehliadača %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Áno, máme svieži nový vzhľad!";
 
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "Akcie stránky > Verzia stránky pre počítače";
