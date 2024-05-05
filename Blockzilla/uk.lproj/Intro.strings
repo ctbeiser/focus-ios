@@ -1,5 +1,5 @@
 /* Description for the 'History' panel in the First Run tour. */
-"Intro.Slides.History.Description" = "Будь-коли стирайте всю історію перегляду, паролі та куки одним дотиком.";
+"Intro.Slides.History.Description" = "Будь-коли стирайте всю історію перегляду, паролі та файли cookie одним дотиком.";
 
 /* Title for the third  panel 'History' in the First Run tour. */
 "Intro.Slides.History.Title" = "Ваша історія залишається історією";
@@ -8,7 +8,7 @@
 "Intro.Slides.Next.Button" = "Далі";
 
 /* Description for the 'Favorite Search Engine' panel in the First Run tour. */
-"Intro.Slides.Search.Description" = "Шукаєте щось інше? Оберіть інший пошуковий засіб.";
+"Intro.Slides.Search.Description" = "Шукаєте щось інше? Оберіть іншу пошукову систему.";
 
 /* Title for the second  panel 'Search' in the First Run tour. */
 "Intro.Slides.Search.Title" = "Ваш пошук, ваш шлях";
