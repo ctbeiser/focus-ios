@@ -2,7 +2,7 @@
 "About.learnMoreButton" = "Tìm hiểu thêm";
 
 /* Label on About screen */
-"About.missionLabel" = "%@ được sản xuất bởi Mozilla. Nhiệm vụ của chúng tôi là thúc đẩy một Internet lành mạnh, cởi mở.";
+"About.missionLabel" = "%@ được sáng lập bởi Mozilla. Nhiệm vụ của chúng tôi là thúc đẩy một Internet lành mạnh, cởi mở.";
 
 /* Label on About screen */
 "About.privateBullet1" = "Tìm kiếm và duyệt ngay trong ứng dụng";
@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Sử dụng chế độ sáng/tối của hệ thống";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "Có gì mới";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "SIRI SHORTCUTS";
 
@@ -440,7 +437,7 @@
 "ShareMenu.RemoveShortcut.Confirm" = "Đã xóa lối tắt";
 
 /* Text for the share menu option when a user wants to reload the site as a desktop */
-"ShareMenu.RequestDesktop" = "Yêu cầu trang web trên máy tính";
+"ShareMenu.RequestDesktop" = "Yêu cầu trang web cho máy tính";
 
 /* Text for the share menu option when a user wants to reload the site as a mobile device */
 "ShareMenu.RequestMobile" = "Yêu cầu trang web di động";
@@ -523,17 +520,11 @@
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Bật Touch ID";
 
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Đọc thêm về điều này và các cập nhật khác cho %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Chúng tôi có một giao diện mới!";
-
 /* Text for a label that indicates the description for request desktop tip. */
-"Tip.RequestDesktop.Description" = "Hành động trang> Yêu cầu trang web trên máy tính";
+"Tip.RequestDesktop.Description" = "Hành động trang > Yêu cầu trang web cho máy tính";
 
 /* Text for a label that indicates the title for request desktop tip. */
-"Tip.RequestDesktop.Title" = "Bạn muốn xem phiên bản máy tính để bàn đầy đủ của một trang web?";
+"Tip.RequestDesktop.Title" = "Bạn muốn xem phiên bản cho máy tính của một trang web?";
 
 /* Text for a label that indicates the description for share trackers tip. The placeholder is the number of trackers blocked. Only shown when there are more than 10 trackers blocked. For locales where we would need plural support, please feel free to translate this string as `Trackers blocked so far: %@` instead. */
 "Tip.ShareTrackers.Description" = "%@ trình theo dõi đã bị chặn cho đến nay";
