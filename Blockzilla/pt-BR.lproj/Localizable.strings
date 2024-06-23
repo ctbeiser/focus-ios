@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Usar o modo claro/escuro do sistema";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "O que há de novo";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "ATALHOS DA SIRI";
 
@@ -523,12 +520,6 @@
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Ativar Touch ID";
 
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Leia mais sobre esta e outras novidades do %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Sim, temos um novo visual!";
-
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "Ações da página > Solicitar versão de computador do site";
 
@@ -620,7 +611,7 @@
 "URL.addToAutocompleteLabel" = "Adicionar link para ser completado automaticamente";
 
 /* Text for the URL context menu when a user long presses on the URL bar with clipboard contents. */
-"URL.contextMenu" = "Colar e ir";
+"URL.contextMenu" = "Colar e abrir";
 
 /* Erase button in the URL bar */
 "URL.eraseButtonLabel" = "APAGAR";

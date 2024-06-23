@@ -412,9 +412,6 @@
 /* Value for theme toggle in settings menu */
 "Settings.useSystemTheme" = "Nota ljóst/dökkt þema kerfis";
 
-/* Title for What's new screen */
-"Settings.whatsNewTitle" = "Hvað er nýtt";
-
 /* Title for settings section to enable different Siri Shortcuts. */
 "Settinsg.siriShortcutsTitle" = "SIRI FLÝTILEIÐIR";
 
@@ -523,12 +520,6 @@
 /* Text for a label that indicates the description for biometric Touch ID tip. */
 "Tip.BiometricTouchId.Description" = "Kveikja á Touch ID";
 
-/* Text for a label that indicates the description for release tip. The placeholder is replaced with the short product name (Focus or Klar). */
-"Tip.Release.Description" = "Lestu meira um þetta og aðrar uppfærslur á %@.";
-
-/* Text for a label that indicates the title for release tip. */
-"Tip.Release.Title" = "Einmitt, við erum með ferskt nýtt útlit!";
-
 /* Text for a label that indicates the description for request desktop tip. */
 "Tip.RequestDesktop.Description" = "Síðuaðgerðir > Biðja um borðtölvusíður";
 
@@ -635,7 +626,7 @@
 "URL.paste" = "Líma";
 
 /* Placeholder text shown in the URL bar before the user navigates to a page */
-"URL.placeholderText" = "Leitaðu eða sláðu inn vistfang";
+"URL.placeholderText" = "Leitaðu eða settu inn vistfang";
 
 /* Label displayed for search button when typing in the URL bar */
 "URL.searchLabel" = "Leita að %@";
